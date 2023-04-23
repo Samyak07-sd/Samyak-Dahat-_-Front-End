@@ -1,1 +1,6 @@
+1.Explain what the simple List component does.
+Ans. React.memo() is used to memoize functional component.
+     when applied it prevents useless re-rendering (if previos props == current props). 
+     Here WrappedListComponent is wrapped with memo and passed to List. And this List is exported as a default export.
+
 
