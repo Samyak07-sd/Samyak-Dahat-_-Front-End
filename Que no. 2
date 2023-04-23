@@ -1,1 +1,18 @@
+2. What problems / warnings are there with code?
 
+Ans. 
+error 1: 
+In WrappedSingleListItem, the onClickHandler function is being called immediately instead of being passed as a callback function. 
+This will cause onClickHandler to be called as soon as the component is rendered, rather than when the list item is clicked.
+
+error 2: 
+In WrappedListComponent, the useState hook is not being used correctly. 
+The first argument to useState should be the initial state value, but it is missing in this case.
+Also, setSelectedIndex is assigned the value of null, which is not a valid state value.
+Instead, the initial state value for selectedIndex should be set to 0, since that is the index of the first item in the list.
+
+error 3: 
+In WrappedListComponent propTypes, there is a syntax error.
+
+error 4: 
+In the same propTypes definition for WrappedListComponent, the PropTypes.string.isRequired validation is not set correctly for the items prop.
